@@ -1,16 +1,16 @@
 # ZooKeeper
-## 1. CAP定理
-## 2. ZAB协议
-## 3. Leader选举算法和流程
+### 1. CAP定理
+### 2. ZAB协议
+### 3. Leader选举算法和流程
 # Redis
-## 1. Redis的应用场景
-## 2. Redis支持的数据类型（必考）
-## 3. zset跳表的数据结构（必考）
-## 4. Redis的数据过期策略（必考）
-## 5. Redis的LRU过期策略的具体实现
-## 6. 如何解决Redis缓存雪崩，缓存穿透问题
-## 7. Redis的持久化机制（必考）
-## 8. Redis的管道pipeline
+### 1. Redis的应用场景
+### 2. Redis支持的数据类型（必考）
+### 3. zset跳表的数据结构（必考）
+### 4. Redis的数据过期策略（必考）
+### 5. Redis的LRU过期策略的具体实现
+### 6. 如何解决Redis缓存雪崩，缓存穿透问题
+### 7. Redis的持久化机制（必考）
+### 8. Redis的管道pipeline
 # Mysql
 1. 事务的基本要素
 >  ACID，是指在可靠数据库管理系统（DBMS）中，事务(transaction)所应该具有的四个特性：
