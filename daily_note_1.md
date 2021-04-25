@@ -31,9 +31,9 @@
 > | 隔离级别 | 脏读 | 不可重复读 | 幻读 |
 > | --- | --- | --- | --- |
 > | 未提交读(Read Uncommitted) | 存在 | 存在 | 存在 |
-> | 已提交读(Read Committed) | <font color='#B22222'>不存在</font> | 存在 | 存在 |
-> | 可重复读(Repeated Read) | <font color='#B22222'>不存在</font> | <font color='#B22222'>不存在</font> | 存在 |
-> | 可串行读(Serializable) | <font color='#B22222'>不存在</font> | <font color='#B22222'>不存在</font> | <font color='#B22222'>不存在</font> |
+> | 已提交读(Read Committed) | <font color='red'> 不存在 </font> | 存在 | 存在 |
+> | 可重复读(Repeated Read) | <font color='#B22222'> 不存在 </font> | <font color='#B22222'> 不存在 </font> | 存在 |
+> | 可串行读(Serializable) | <font color='#B22222'> 不存在 </font> | <font color='#B22222'>不存在 </font> | <font color='#B22222'>不存在</font> |
 > 
 > 提交读：Oracle等多数数据库默认都是该级别 (不重复读)
 > 可重复读：InnoDB默认级别。在SQL标准中，该隔离级别消除了不可重复读，但是还存在幻象读
