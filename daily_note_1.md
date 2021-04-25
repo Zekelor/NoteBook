@@ -31,7 +31,7 @@
 > | 隔离级别 | 脏读 | 不可重复读 | 幻读 |
 > | --- | --- | --- | --- |
 > | 未提交读(Read Uncommitted) | 存在 | 存在 | 存在 |
-> | 已提交读(Read Committed) | <font color='red'> 不存在 </font> | 存在 | 存在 |
+> | 已提交读(Read Committed) | <font color=#00ffff size=72>不存在</font> | 存在 | 存在 |
 > | 可重复读(Repeated Read) | <font color='#B22222'> 不存在 </font> | <font color='#B22222'> 不存在 </font> | 存在 |
 > | 可串行读(Serializable) | <font color='#B22222'> 不存在 </font> | <font color='#B22222'>不存在 </font> | <font color='#B22222'>不存在</font> |
 > 
