@@ -50,7 +50,7 @@
 > DELETE时，保存当前事务版本号为行的删除版本号
 > UPDATE时，插入一条新纪录，保存当前事务版本号为行创建版本号，同时保存当前事务版本号到原来删除的行
 
-> 对于这种读取历史数据的方式，我们叫它<font color='red' size='5'>快照读 (snapshot read)</font>，而读取数据库当前版本数据的方式，叫当前读 (current read)。很显然，在MVCC中：
+对于这种读取历史数据的方式，我们叫它<font color='#FF0000'>快照读 (snapshot read)</font>，而读取数据库当前版本数据的方式，叫当前读 (current read)。很显然，在MVCC中：
 
 > * 快照读：
 > 就是select
