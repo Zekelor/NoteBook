@@ -107,12 +107,29 @@
 15. Exception和Error16. Object类内的方法
 # Spring
 1. Spring的IOC/AOP的实现（必考）
-2. 动态代理的实现方式（必考）
-3. Spring如何解决循环依赖（三级缓存）（必考）
-4. Spring的后置处理器
-5. Spring的@Transactional如何实现的（必考）
-6. Spring的事务传播级别
-7. BeanFactory和ApplicationContext的联系和区别
+> 引用 Spring 官方原文：This chapter covers the Spring Framework implementation of the
+
+Inversion of Control (IoC) [1] principle. IoC is also known as dependency injection (DI). It is a
+
+process whereby objects define their dependencies, that is, the other objects they work with, only
+through constructor arguments, arguments to a factory method, or properties that are set on the
+object instance after it is constructed or returned from a factory method. The container then injects
+those dependencies when it creates the bean. This process is fundamentally the inverse, hence the
+name Inversion of Control (IoC), of the bean itself controlling the instantiation or location of its
+dependencies by using direct construction of classes, or a mechanism such as the Service Locator
+pattern.
+“控制反转（IoC）”也称为“依赖注入（DI）”，是一个定义对象依赖的过程，对象只
+和构造参数，工厂方法参数，对象实例属性或工厂方法返回相关。容器在创建这些 bean 的
+时候注入这些依赖。这个过程是一个反向的过程，所以命名为依赖反转，对象实例的创建由
+其提供的构造方法或服务定位机制来实现。
+> IoC 最大的好处就是“ 解耦 ”。
+
+3. 动态代理的实现方式（必考）
+4. Spring如何解决循环依赖（三级缓存）（必考）
+5. Spring的后置处理器
+6. Spring的@Transactional如何实现的（必考）
+7. Spring的事务传播级别
+8. BeanFactory和ApplicationContext的联系和区别
 # 其他
 1. 高并发系统的限流如何实现
 2. 高并发秒杀系统的设计
