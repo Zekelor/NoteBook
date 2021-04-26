@@ -107,7 +107,8 @@
 15. Exception和Error16. Object类内的方法
 # Spring
 1. Spring的IOC/AOP的实现（必考）
- 引用 Spring 官方原文：This chapter covers the Spring Framework implementation of the
+
+引用 Spring 官方原文：This chapter covers the Spring Framework implementation of the
 
 > ***Inversion of Control (IoC) [1] principle. IoC is also known as dependency injection (DI). It is a
   process whereby objects define their dependencies, that is, the other objects they work with, only
@@ -116,13 +117,31 @@
 > those dependencies when it creates the bean. This process is fundamentally the inverse, hence the
 > name Inversion of Control (IoC), of the bean itself controlling the instantiation or location of its
 > dependencies by using direct construction of classes, or a mechanism such as the Service Locator
-> pattern.
-> “控制反转（IoC）”也称为“依赖注入（DI）”，是一个定义对象依赖的过程，对象只
+> pattern.***
+> 
+> ***“控制反转（IoC）”也称为“依赖注入（DI）”，是一个定义对象依赖的过程，对象只
 > 和构造参数，工厂方法参数，对象实例属性或工厂方法返回相关。容器在创建这些 bean 的
 > 时候注入这些依赖。这个过程是一个反向的过程，所以命名为依赖反转，对象实例的创建由
 > 其提供的构造方法或服务定位机制来实现。
 > IoC 最大的好处就是“ 解耦 ”*** 
 > 
+<font color='red'>简单来讲是通过xml/工厂类，xml中通过class反射对象实例，得到相应的对象进行反转控制</font>
+```
+第一步
+<bean id="demoBean" class="com.zet.springioc.UserService">
+
+第二步
+public static UserService getService(){
+  String classValue="class属性值";
+  
+  Class clazz =Class.forName(classValue);
+  
+  UserService service =clazz.newInstance();
+  
+  return service;
+}
+
+```
 
 3. 动态代理的实现方式（必考）
 4. Spring如何解决循环依赖（三级缓存）（必考）
